@@ -1,0 +1,277 @@
+/****** BASE STYLES ******/
+
+html {
+    font-size: 16px;
+}
+/*#container {
+    width: 1400px;
+    margin: auto;
+ }*/
+ 
+body {
+    font-family: 'Montserrat', sans serif; 
+    background-color: #1f202b; 
+    color: #ffffff;
+    font-size: 1em;
+    text-align: left;
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+a{
+    color:  
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+h2{
+    font-family: ;
+    font-size: ;
+    font-weight: ;
+}
+
+h3,
+h4 {
+    font-family: ;
+    font-size: ;
+    font-weight: ;
+    margin: ;
+}
+
+p{
+    font-size: ;
+    line-height: 1.285;
+}
+
+img {
+    width: 100%;
+}
+
+figure {
+    margin: 0;
+}
+
+address {
+    font-size: normal;
+}
+
+.content-wrapper {
+    width: 90%;
+    margin: 50px 0;
+}
+
+/****** GRID ******/
+
+/*.full-width {
+    width: 1200px;
+    margin: 0 auto;
+    overflow: auto;
+}*/
+
+/*- ".full-width" to ".content-wrapper" -*/
+
+.half-width {
+    width: 600px;
+    float: left;
+}
+
+/*.third-width {
+    width: 400px;
+    float: left;
+}*/
+
+/*--- BASE HEADER-FOOTER STYLES ---*/
+header,
+footer {
+    background-color: #1f202b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+/*header{
+    background-image: url('../img/hero-background.png');
+    background-size: cover;
+    background-position: center;
+    height: 725px;
+    margin-top: auto;
+    width: 100%;
+    padding: 15px 0;
+}*/
+
+header .content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    margin: 0;
+}
+
+/*header h2{
+    font-family: 'Source Code Pro', monospace;
+    font-size: 46px;
+    margin-top: 275px;
+}
+
+header h2 span{
+    color: #f70074;
+    font-family: 'Press Start 2p', cursive;
+    font-size: 2em;
+}*/
+
+
+/***** NAV STYLES *****/
+
+header nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
+    text-transform: lowercase;
+    text-decoration: none;
+    width: 60%;
+}
+
+header nav ul li{
+    display: flex;
+    margin-left: 10px;
+    justify-content: space-around;
+    width: 100%;
+}
+
+header nav ul li a {
+    color: #f70074;
+    font-size: 20px; 
+}
+
+h3{
+    color: #f70074;
+}
+
+footer {
+    text-align: center;
+    flex-direction: column;
+  }
+  
+footer p {
+    margin: 0;
+  }
+  
+footer .content-wrapper{
+    width: 55%;
+    margin: 50px 0;
+  }
+  
+footer .contact {
+    margin-bottom: 50px;
+  }
+
+footer .copyright {
+    margin: 20px 0;
+  }
+
+/*--- HERO---*/
+
+.hero-area {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    background-image: url('../img/hero-background.png');
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
+    height: 725px;
+    margin-top: auto;
+    width: 100%;
+  }
+  
+.hero-area h2 {
+    font-size: 2.875em;
+    font-family: 'Source Code Pro', monospace;
+    /*font-weight:500;*/
+    line-height:1.2;
+  }
+
+.hero-area h2 span {
+      color: #00bfff;
+      font-family: 'Press Start 2p', cursive;
+      font-size: 1.275em;
+  }
+
+.neon {
+    color: #00bfff;
+    text-shadow:0 0 5px #fff,
+                0 0 10px #fff,
+                0 0 20px #0bf,
+                0 0 40px #0bf,
+                0 0 80px #00f;
+}
+
+/***** PORTFOLIO STYLES *****/
+
+.portfolio-items {
+    margin-left: 50px;
+    padding: 20px;
+}
+
+.content-wrapper h3{
+    text-align: center;
+}
+
+/***** ABOUT STYLES *****/
+
+#about {
+    background-image: url('../img/mysitekeyboard-background2.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    height: 550px;
+}
+
+#about h4{
+    font-family: 'Source Code Pro', monospace;
+    font-size: 30px;
+    padding-left: 50px;
+}
+#about p{
+    font-family: 'Source Code Pro', monospace;
+    padding-left: 50px;
+}
+
+/***** CONTACT STYLES *****/
+
+#contact{
+    height: 250px;
+    background: #1f202b;
+    margin-top: 110px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact h3{
+    text-align: center;
+}
+#contact ul {
+    list-style: none;
+}
+
+#contact ul li {
+     display: inline-flex;
+}
+
+#contact h5 {
+    text-align: center;
+}
+
+
