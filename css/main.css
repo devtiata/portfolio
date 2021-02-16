@@ -237,6 +237,9 @@ footer .copyright {
 
 #contact ul li {
      display: inline-flex;
+     justify-content: center;
+     align-items: center;
+
 }
 
 #contact h5 {
@@ -245,8 +248,60 @@ footer .copyright {
 
 /*--- SERVICES PAGE STYLES ---*/
 
+#services h2 span {
+    font-size: 1em;
+    text-align: left;
+}
 
+.services .content-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
 
+.services h2,
+.services h3 {
+    text-align: center;
+    padding: 10px 40px 10px 40px;
+}
+.services .service-packages h3 {
+    font-size: 1.75em;
+}
+.service-packages article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    margin-bottom: 25px;
+    padding:0 10px 0 50px;
+}
+
+.service-packages article h4 {
+    font-size: 1.3em;
+}
+
+.service-packages article .package-description {
+    justify-content: center;
+}
+
+.package-details {
+    text-align: center;
+    font-size: 1em;
+}
+
+.package-details h3 {
+    font-size: 1.75em;
+}
+
+.package-details-description article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+.package-details-description article h4 {
+    font-size: 1.2em; 
+}
 
 /*--- TABLET STYLES ---*/
 @media only screen and (min-width: 768px) {
