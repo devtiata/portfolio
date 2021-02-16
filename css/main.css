@@ -3,10 +3,6 @@
 html {
     font-size: 16px;
 }
-/*#container {
-    width: 1400px;
-    margin: auto;
- }*/
  
 body {
     font-family: 'Montserrat', sans serif; 
@@ -21,32 +17,16 @@ ol {
     list-style-type: none;
 }
 
-a{
-    color:  
+a{ 
     text-decoration: none;
 }
 
 h1 {
-    font-size: 15px;
+    font-size: 20px;
     margin-left: 10px;
 }
 
-h2{
-    font-family: ;
-    font-size: ;
-    font-weight: ;
-}
-
-h3,
-h4 {
-    font-family: ;
-    font-size: ;
-    font-weight: ;
-    margin: ;
-}
-
 p{
-    font-size: ;
     line-height: 1.285;
 }
 
@@ -97,16 +77,6 @@ footer {
     flex-flow: row wrap;
 }
 
-/*header{
-    background-image: url('../img/hero-background.png');
-    background-size: cover;
-    background-position: center;
-    height: 725px;
-    margin-top: auto;
-    width: 100%;
-    padding: 15px 0;
-}*/
-
 header .content-wrapper {
     display: flex;
     justify-content: center;
@@ -114,19 +84,6 @@ header .content-wrapper {
     flex-flow: row wrap;
     margin: 0;
 }
-
-/*header h2{
-    font-family: 'Source Code Pro', monospace;
-    font-size: 46px;
-    margin-top: 275px;
-}
-
-header h2 span{
-    color: #f70074;
-    font-family: 'Press Start 2p', cursive;
-    font-size: 2em;
-}*/
-
 
 /***** NAV STYLES *****/
 
@@ -136,7 +93,6 @@ header nav{
     align-items: center;
     flex-flow: row wrap;
     text-transform: lowercase;
-    text-decoration: none;
     width: 60%;
 }
 
@@ -149,7 +105,8 @@ header nav ul li{
 
 header nav ul li a {
     color: #f70074;
-    font-size: 20px; 
+    font-size: 20px;
+    text-decoration: none; 
 }
 
 h3{
@@ -175,7 +132,9 @@ footer .contact {
   }
 
 footer .copyright {
-    margin: 20px 0;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.875em;
   }
 
 /*--- HERO---*/
@@ -196,7 +155,6 @@ footer .copyright {
 .hero-area h2 {
     font-size: 2.875em;
     font-family: 'Source Code Pro', monospace;
-    /*font-weight:500;*/
     line-height:1.2;
   }
 
@@ -226,6 +184,10 @@ footer .copyright {
     text-align: center;
 }
 
+.portfolio-description {
+    margin-bottom: 70px;
+}
+
 /***** ABOUT STYLES *****/
 
 #about {
@@ -243,8 +205,15 @@ footer .copyright {
     padding-left: 50px;
 }
 #about p{
-    font-family: 'Source Code Pro', monospace;
+    font-family: 'Roboto Mono', monospace;
+    margin-top: 100px;
     padding-left: 50px;
+    padding-right: 15px;
+}
+
+.shadow {
+    color: #fff;
+    text-shadow: 0 0 5px #1f202b;
 }
 
 /***** CONTACT STYLES *****/
@@ -274,4 +243,52 @@ footer .copyright {
     text-align: center;
 }
 
+/*--- SERVICES PAGE STYLES ---*/
 
+
+
+
+/*--- TABLET STYLES ---*/
+@media only screen and (min-width: 768px) {
+
+/*--- GENERAL STYLES ---*/
+
+.content-wrapper {
+    max-width: 640px;
+    margin: 100px 0;
+}
+
+h2 {
+    font-size: 2.25em;
+    line-height: 1.333;
+}
+
+h3 {
+    font-size: 1.5em;
+    line-height: 1.25;
+}
+
+/*--- HEADER STYLES ---*/
+
+header {
+    justify-content: space-around;
+  }
+
+  header .content-wrapper{
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  header nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: right;
+    flex-flow: row;
+    width: 50%;
+  }
+
+  header nav ul li a {
+    text-decoration: none;
+    margin: 3px;
+  }
+}
