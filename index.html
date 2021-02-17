@@ -14,6 +14,8 @@
     </head>
 
     <body>
+        <div id="progressbar"></div>
+        <div id="scrollPath"></div>
         <h1> &lt; tiata m | web developer /> </h1>
         <header>
             <div class=".content-wrapper">
@@ -82,15 +84,15 @@
                             </article>
 
                         </div>
-
+                </div>
             </section>
 
             <section class="about" id="about">
                 <div class=".content-wrapper">
+                    <h4>Hi, I'm Tiata <br>
+                        [tee-odd-uh]</h4>
                     <article>
                         <div>
-                            <h4>Hi, I'm Tiata <br>
-                                [tee-odd-uh]</h4>
                             <p class="shadow">
                                 I'm a web developer with a passion for design. <br> 
                                 I love clean, organized code used to create responsive UI.<br>
@@ -139,5 +141,13 @@
             </footer>
 
         </main>
+        <script type="text/javascript">
+            let progress = document.getElementById('progressbar');
+            let totalHeight = document.body.scrollHeight - window.innerHeight;
+            window.onscroll = function(){
+                let progressHeight = (window.pageYOffset / totalHeight) * 100;
+                progress.style.height = progressHeight + "%";
+            }
+        </script>
     </body>
 </html>

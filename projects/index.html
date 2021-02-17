@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="utf-8">
+        <title>Projects</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet" href="../css/main.css">
+    </head>
+    <body>
+        <div id="progressbar"></div>
+        <div id="scrollPath"></div>
+        <h1> &lt; tiata m | web developer /> </h1>
+        <header>
+            <div class=".content-wrapper">
+                    <nav>
+                        <ul>
+                            <li><a href="../#features/index.html">Portfolio</a></li>
+                            <li><a href="../#about/index.html">About</a></li>
+                            <li><a href="../#contact/index.html">Contact</a></li>
+                            <li><a href="services/index.html">Services</a></li>
+                            <li><a href="index.html">Projects</a></li>
+                        </ul>
+                    </nav>
+            </div>
+        </header>
+
+        <main>
+            <section id="services" class="hero-area">
+                <div class="content-wrapper">
+                    <div>
+                        <h2>Projects to learn and <br> 
+                        enhance my <span class="neon">skills</span></h2>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer id="contact">
+            <div class="content-wrapper">
+                <h3>let's connect</h3>
+                <div class="contact">
+                    <h4>Hire Me</h4>
+                    <address> 
+                        <p><a href="mailto:tiataclaymore@gmail.com">tiataclaymore@gmail.com</a></p>
+                    </address>
+                </div>
+                <div class="social">
+                    <h4>Follow Me</h4>
+                        <div class="social-icons">
+                            <ul>
+                                <!-- <li><a href="www.twitter.com" target="_BLANK"><img src="../img/Twitter.png" alt="twitter icon"></a></li> -->
+                                <li><a href="www.github.com/devtiata" target="_BLANK"><img src="../img/github.png" alt="github icon"></a></li>
+                                <li><a href="www.linkedin.com/in/devtiata.com" target="_BLANK"><img src="../img/LinkedIn.png" alt="linkedin icon"></a></li>
+                            </ul>
+                        </div>
+                </div>
+                <div class="meetup">
+                    <h4>Meet Me</h4>
+                    <p>Columbus, OH</p><br>
+                    <p>Let's go to meetups together! <br> 
+                        Post COVID-19, that is!</p>
+                </div>
+
+                <div class="copyright">
+                    <p>Copyright 2020 | tiata m</p>
+                </div>
+
+            </div>
+        </footer>
+
+        <script type="text/javascript">
+            let progress = document.getElementById('progressbar');
+            let totalHeight = document.body.scrollHeight - window.innerHeight;
+            window.onscroll = function(){
+                let progressHeight = (window.pageYOffset / totalHeight) * 100;
+                progress.style.height = progressHeight + "%";
+            }
+        </script>
+
+
+    </body>

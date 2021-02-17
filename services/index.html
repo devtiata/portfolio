@@ -13,6 +13,8 @@
     </head>
 
     <body>
+        <div id="progressbar"></div>
+        <div id="scrollPath"></div>
         <h1> &lt; tiata m | web developer /> </h1>
         <header>
             <div class=".content-wrapper">
@@ -105,7 +107,7 @@
                         <h4>Web Design</h4>
                         <p>Begins with a 1-hour consult to go over your current website or websites you admire to discuss design and functionality that you're looking for. After the meeting we'll set up a sales strategy session and incorporate those goals to the final design of your site.</p>
                         <ul>
-                            <li>Custom site - Me building a template or theme from scratch to meet your unique needs.</li>
+                            <li>Custom site - I build a template or theme from scratch to meet your unique needs. You'll have an accessible website that looks great on any screen.</li>
                         </ul>
                         <p class="detail">*Website design takes 4-10 weeks depending on complexity</p>
                     </article>
@@ -155,7 +157,7 @@
                     <div class="contact">
                         <h4>Hire Me</h4>
                         <address> 
-                            <p><a href="mailto:tiataclaymore@gmail.com">tiataclayore@gmail.com</a></p>
+                            <p><a href="mailto:tiataclaymore@gmail.com">tiataclaymore@gmail.com</a></p>
                         </address>
                     </div>
                     <div class="social">
@@ -183,6 +185,15 @@
             </footer>
 
         </main>
+
+        <script type="text/javascript">
+            let progress = document.getElementById('progressbar');
+            let totalHeight = document.body.scrollHeight - window.innerHeight;
+            window.onscroll = function(){
+                let progressHeight = (window.pageYOffset / totalHeight) * 100;
+                progress.style.height = progressHeight + "%";
+            }
+        </script>
 
     </body>
 
