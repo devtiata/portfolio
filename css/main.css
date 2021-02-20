@@ -1,4 +1,4 @@
-/****** BASE STYLES ******/
+/*------------- BASE STYLES ------------*/
 
 html {
     font-size: 16px;
@@ -6,7 +6,7 @@ html {
  
 body {
     font-family: 'Montserrat', sans serif; 
-    background-color: #1f202b; 
+    background-color: #1f202b;
     color: #ffffff;
     font-size: 1em;
     text-align: left;
@@ -40,6 +40,7 @@ figure {
 
 address {
     font-size: 1em;
+    color: #fff;
 }
 
 .content-wrapper {
@@ -47,35 +48,14 @@ address {
     margin: 50px 0;
 }
 
-/****** GRID ******/
 
-/*.full-width {
-    width: 1200px;
-    margin: 0 auto;
-    overflow: auto;
-}*/
-
-/*- ".full-width" to ".content-wrapper" -*/
-
-.half-width {
-    width: 600px;
-    float: left;
-}
-
-/*.third-width {
-    width: 400px;
-    float: left;
-}*/
-
-/*--- BASE HEADER-FOOTER STYLES ---*/
-header,
-footer {
-    background-color: #1f202b;
+/*------------ BASE HEADER-FOOTER STYLES ----------*/
+header, footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-flow: row wrap;
 }
+
 
 header .content-wrapper {
     display: flex;
@@ -85,7 +65,7 @@ header .content-wrapper {
     margin: 0;
 }
 
-/***** NAV STYLES *****/
+/*------------- NAV STYLES -----------*/
 
 header nav{
     display: flex;
@@ -124,20 +104,26 @@ footer p {
   
 footer .content-wrapper{
     width: 55%;
-    margin: 50px 0;
+    margin-bottom: 100px;
   }
   
-footer .contact {
-    margin-bottom: 50px;
+footer #contact {
+    margin: 0;
   }
+
+#contact h3 {
+    margin-top: 80px;
+}
 
 footer .copyright {
     margin-top: 20px;
+    margin-bottom: 8px;
     text-align: center;
     font-size: 0.875em;
   }
 
-/*--- SCROLL BAR ---*/
+
+/*---------- SCROLL BAR ------------*/
 
 ::-webkit-scrollbar {
     width: 0;
@@ -195,7 +181,7 @@ footer .copyright {
     filter: blur(30px);
 }
 
-/*--- HERO---*/
+/*---------------- HERO ---------------*/
 
 .hero-area {
     display: flex;
@@ -231,10 +217,13 @@ footer .copyright {
                 0 0 80px #00f;
 }
 
-/***** PORTFOLIO STYLES *****/
+/*--------------- PORTFOLIO STYLES --------------*/
 
+.features h3 {
+    font-size: 1.6em;
+}
 .portfolio-items {
-    margin-left: 50px;
+    margin:0;
     padding: 20px;
 }
 
@@ -246,7 +235,12 @@ footer .copyright {
     margin-bottom: 70px;
 }
 
-/***** ABOUT STYLES *****/
+.portfolio-description h4 {
+    color: #f70074;
+    font-size: 1.5em;
+}
+
+/*----------- ABOUT STYLES ----------*/
 
 #about {
     background-image: url('../img/mysitekeyboard-background2.png');
@@ -263,7 +257,7 @@ footer .copyright {
     padding-left: 50px;
 }
 #about p{
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Montserrat', sans serif;
     margin-top: 50px;
     padding-left: 50px;
     padding-right: 15px;
@@ -274,37 +268,33 @@ footer .copyright {
     text-shadow: 0 0 5px #1f202b;
 }
 
-/***** CONTACT STYLES *****/
+/*----------- CONTACT STYLES -----------*/
 
-#contact{
+#contact .content-wrapper{
     height: 250px;
-    background: #1f202b;
-    margin-top: 110px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
+    margin-top: 50px;
+    justify-content: space-between;
     align-items: center;
 }
 
-#contact h3{
+#contact h3 {
     text-align: center;
 }
+
+.social h4 {
+    text-align: center;
+}
+
 #contact ul {
     list-style: none;
 }
 
 #contact ul li {
      display: inline-flex;
-     justify-content: center;
-     align-items: center;
-
+    
 }
 
-#contact h5 {
-    text-align: center;
-}
-
-/*--- SERVICES PAGE STYLES ---*/
+/*============ SERVICES PAGE STYLES ==============*/
 
 #services h2 span {
     font-size: 1em;
@@ -321,6 +311,15 @@ footer .copyright {
     text-align: center;
     padding: 10px 40px 10px 40px;
 }
+
+.services h2 {
+    color: #f70074;
+}
+
+.services h3{
+    color:#fff;
+}
+
 .services .service-packages h3 {
     font-size: 1.75em;
 }
@@ -329,8 +328,7 @@ footer .copyright {
     justify-content: center;
     align-items: center;
     flex-flow: column;
-    margin-bottom: 25px;
-    padding:0 10px 0 50px;
+    padding: 10px 40px 10px 40px;
 }
 
 .service-packages article h4 {
@@ -344,6 +342,7 @@ footer .copyright {
 .package-details {
     text-align: center;
     font-size: 1em;
+    margin-top: 80px;
 }
 
 .package-details h3 {
@@ -355,35 +354,50 @@ footer .copyright {
     justify-content: center;
     align-items: center;
     flex-flow: column;
+    margin: 25px;
+    padding: 10px 40px 10px 40px;
 }
 
 .package-details-description article h4 {
-    font-size: 1.2em; 
+    font-size: 1.2em;
+    color: #00ffe7; 
 }
 
-/*--- TABLET STYLES ---*/
+
+
+/*============== PROJECTS PAGE STYLES ============*/
+
+.projects {
+    text-align: center;
+    font-size: 2em;
+    padding: 50px 0 100px 0;
+}
+
+
+
+/*-========================= TABLET STYLES ======================*/
 @media only screen and (min-width: 768px) {
 
-/*--- GENERAL STYLES ---*/
+/*--------------- GENERAL STYLES ---------------*/
 
-.content-wrapper {
+    .content-wrapper {
     max-width: 640px;
     margin: 100px 0;
-}
+    }
 
-h2 {
+    h2 {
     font-size: 2.25em;
     line-height: 1.333;
-}
+    }
 
-h3 {
+    h3 {
     font-size: 1.5em;
     line-height: 1.25;
-}
+    }
 
-/*--- HEADER STYLES ---*/
+/*------------ HEADER STYLES ----------*/
 
-header {
+    header {
     justify-content: space-around;
   }
 
@@ -404,4 +418,91 @@ header {
     text-decoration: none;
     margin: 3px;
   }
+
+  footer {
+    justify-content: space-around;
+  }
+
+  footer .content-wrapper{
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  footer nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: right;
+    flex-direction: row;
+  }
+
+  #contact .content-wrapper{
+    height: 250px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row;
+    }
+
+    /*------- SERVICES ---------*/
+    .services .content-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .services h2,
+    .services h3 {
+        text-align: center;
+        padding: 10px 40px 10px 40px;
+    }
+    .services .service-packages h3 {
+        font-size: 1.75em;
+    }
+    .service-packages article {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column;
+        margin-bottom: 25px;
+        padding: 10px 40px 10px 40px;
+    }
+    
+    .service-packages article h4 {
+        font-size: 1.3em;
+    }
+    
+    .service-packages article .package-description {
+        justify-content: center;
+    }
+    
+    .package-details {
+        text-align: center;
+        font-size: 1em;
+    }
+    
+    .package-details h3 {
+        font-size: 1.75em;
+    }
+    
+    .package-details-description article {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column;
+        padding: 10px 40px 10px 40px;
+    }
+    
+    .package-details-description article h4 {
+        font-size: 1.2em; 
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+
+    .content-wrapper {
+        max-width: 640px;
+        margin: 100px 0;
+    }
 }
