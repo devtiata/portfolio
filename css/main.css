@@ -222,9 +222,14 @@ footer .copyright {
 .features h3 {
     font-size: 1.6em;
 }
-.portfolio-items {
-    margin:0;
+.portfolio-items article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    
     padding: 20px;
+    width: 100%;
 }
 
 .content-wrapper h3{
@@ -431,8 +436,12 @@ footer .copyright {
   footer nav ul {
     display: flex;
     justify-content: space-between;
-    align-items: right;
+    align-items: center;
     flex-direction: row;
+  }
+
+  #about article {
+      width: 80%;
   }
 
   #contact .content-wrapper{
@@ -441,8 +450,33 @@ footer .copyright {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-flow: row;
+    width: 90%;
     }
+
+    #features {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #features .portfolio-description {
+        width: 75%;
+    }
+
+   /*.portfolio-items article{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: row wrap;
+        padding: 20px 100px 20px 100px;
+        margin: 0;
+        width: 100%;
+    }
+
+    .portfolio-items {
+        text-align: center;
+    }*/
 
     /*------- SERVICES ---------*/
     .services .content-wrapper {
@@ -502,7 +536,21 @@ footer .copyright {
 @media only screen and (min-width: 1200px) {
 
     .content-wrapper {
-        max-width: 640px;
+        max-width: 960px;
         margin: 100px 0;
     }
+
+    /*.portfolio-items {
+        text-align: center;
+    }
+
+    .features .portfolio-items article{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column;
+        margin: 0;
+        width: 100%;
+    }*/
 }
